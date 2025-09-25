@@ -1,0 +1,63 @@
+.rapport-table-container {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 900px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.table-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.table-modern {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.table-modern thead {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.table-modern th, 
+.table-modern td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.table-modern tbody tr {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.table-modern tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.table-modern tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+
+.btn-export {
+  display: inline-block;
+  margin-bottom: 15px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-export:hover {
+  background-color: #45a049;
+}

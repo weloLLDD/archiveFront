@@ -1,0 +1,72 @@
+/* STAT CARDS */
+.stat-card {
+  border-radius: 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  text-align: center;
+  padding: 20px;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.stat-card h3 {
+  font-size: 2rem;
+  margin: 0;
+  font-weight: bold;
+}
+
+.stat-card p {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+/* GRAPHS CARDS */
+.chart-card {
+  border-radius: 12px;
+}
+
+/* DOCUMENTS CARDS */
+.doc-card {
+  border-radius: 12px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.doc-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.doc-card .badge {
+  background-color: rgba(255,255,255,0.3);
+  color: #fff;
+  padding: 2px 8px;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+/* ACTION CARDS */
+.action-card {
+  border-radius: 12px;
+  background-color: #f3f4f6;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.action-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* GENERAL DASHBOARD */
+.content-main {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.content-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
