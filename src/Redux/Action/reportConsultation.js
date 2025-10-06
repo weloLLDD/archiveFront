@@ -24,7 +24,7 @@ export const getConsultationReport = () => async (dispatch, getState) => {
 
     // Appel backend avec le token
     const { data } = await axios.get(
-      "https://archivedb.onrender.com/api/documents/rapport/consultations",
+      "https://archivedb-dq68.onrender.com/api/documents/rapport/consultations",
       config
     );
 
