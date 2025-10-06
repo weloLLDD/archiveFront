@@ -39,7 +39,7 @@ export const listDocument = (
 
     // 🔹 Requête GET avec query params correctement nommés
     const { data } = await axios.get(
-      `https://archivedb-dq68.onrender.com/api/documents?page=${page}&pageSize=${pageSize}&type=${type}&year=${year}&searchTerm=${searchTerm}`,
+      `https://bdd-archives2.onrender.com/api/documents?page=${page}&pageSize=${pageSize}&type=${type}&year=${year}&searchTerm=${searchTerm}`,
       config
     );
 
@@ -82,7 +82,7 @@ export const deleteDocument = (id) => async (dispatch, getState) => {
       },
     };
 
-    await axios.delete(`https://archivedb-dq68.onrender.com/api/documents/${id}`, config);
+    await axios.delete(`https://bdd-archives2.onrender.com/api/documents/${id}`, config);
 
     dispatch({ type: DOCUMENTS_DELETE_SUCCESS });
   } catch (error) {
@@ -120,7 +120,7 @@ export const createDocument = (title, description, type, file) => async (
     formData.append("type", type);
     formData.append("file", file); // ⚡ doit correspondre à upload.single("file")
 
-    const { data } = await axios.post(`https://archivedb-dq68.onrender.com/api/documents/add`, formData, {
+    const { data } = await axios.post(`https://bdd-archives2.onrender.com/api/documents/add`, formData, {
       headers: {
         "Content-Type": "multipart/form-data",
         Authorization: `Bearer ${userInfo.token}`,
@@ -163,7 +163,7 @@ export const consultDocument = (id) => async (dispatch, getState) => {
       },
     };
 
-    const { data } = await axios.get(`https://archivedb-dq68.onrender.com/api/documents/${id}`, config);
+    const { data } = await axios.get(`https://bdd-archives2.onrender.com/api/documents/${id}`, config);
 
     dispatch({
       type: DOCUMENT_CONSULT_SUCCESS,

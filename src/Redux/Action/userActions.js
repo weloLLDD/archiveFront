@@ -28,7 +28,7 @@ export const login = (email, password) => async (dispatch) => {
     };
 
     const { data } = await axios.post(
-      "https://archivedb-dq68.onrender.com/api/users/login",
+      "https://bdd-archives2.onrender.com/api/users/login",
       { email, password },
       config
     );
@@ -70,7 +70,7 @@ export const listUser = () => async (dispatch, getState) => {
       },
     };
 
-    const { data } = await axios.get("https://archivedb-dq68.onrender.com/api/users", config);
+    const { data } = await axios.get("https://bdd-archives2.onrender.com/api/users", config);
 
     dispatch({ type: USER_LIST_SUCCESS, payload: data });
   } catch (error) {
@@ -100,7 +100,7 @@ export const updateUserProfile = (user) => async (dispatch, getState) => {
       },
     };
 
-    const { data } = await axios.put(`https://archivedb-dq68.onrender.com/api/users/profile`, user, config);
+    const { data } = await axios.put(`https://bdd-archives2.onrender.com/api/users/profile`, user, config);
 
     dispatch({ type: USER_UPDATE_PROFILE_SUCCESS, payload: data });
     dispatch({ type: USER_LOGIN_SUCCESS, payload: data }); // met à jour aussi login
@@ -136,7 +136,7 @@ export const createUser = (userData) => async (dispatch, getState) => {
       },
     };
 
-    const { data } = await axios.post("https://archivedb-dq68.onrender.com/api/users", userData, config);
+    const { data } = await axios.post("https://bdd-archives2.onrender.com/api/users", userData, config);
 
     dispatch({
       type: USER_CREATE_SUCCESS,
